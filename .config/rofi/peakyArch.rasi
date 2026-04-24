@@ -1,0 +1,119 @@
+configuration {
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+* {
+    bg:          #000000;
+    bg-alt:      #1a1a1a;
+    bg-bar:      #0d0d0d;
+    fg:          #d0d0d0;
+    fg-alt:      #ffffff;
+    fg-dim:      #606060;
+    border-col:  #ffffff;
+    selected-bg: #383838;
+    selected-fg: #ffffff;
+
+    font:             "Terminus 12";
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+window {
+    background-color: @bg;
+    border:           1px;
+    border-color:     @border-col;
+    border-radius:    0px;
+    width:            500px;
+    padding:          4px;
+    location:         center;
+}
+
+mainbox {
+    background-color: @bg;
+    border:           1px;
+    border-color:     @border-col;
+    border-radius:    0px;
+    children:         [ message, inputbar, listview ];
+    spacing:          0px;
+    padding:          4px;
+}
+
+message {
+    background-color: @bg-bar;
+    border:           0px;
+    padding:          0px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @fg-alt;
+    font:             "Terminus 12";
+    vertical-align:   0.5;
+    horizontal-align: 0;
+    padding:          4px 6px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border:           0px 0px 1px 0px;
+    border-color:     @border-col;
+    padding:          6px 6px;
+    spacing:          8px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @fg-alt;
+    font:             "Terminus 12";
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @fg;
+    font:             "Terminus 12";
+    cursor:           text;
+    placeholder:      "type to search...";
+    placeholder-color: @fg-dim;
+}
+
+listview {
+    background-color: transparent;
+    padding:          4px 0px;
+    spacing:          0px;
+    lines:            12;
+    columns:          1;
+    scrollbar:        false;
+    border:           0px;
+}
+
+element {
+    background-color: transparent;
+    text-color:       @fg;
+    padding:          4px 6px;
+    spacing:          0px;
+    border-radius:    0px;
+    font:             "Terminus 12";
+}
+
+element selected {
+    background-color: @selected-bg;
+    text-color:       @selected-fg;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    font:             inherit;
+}
+
+element-icon {
+    size:             0px;
+}
