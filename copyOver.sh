@@ -1,7 +1,8 @@
-#!bin/bash
+#!/bin/bash
 
-cp $HOME/.xinitrc                    .xinitrc
-cp $HOME/.config/bspwm/*             .config/bspwm
-cp $HOME/.config/polybar/*           .config/polybar/
-cp $HOME/.config/rofi/*              .config/rofi/
-cp $HOME/.config/sxhkd/*             .config/sxhkd/
+rsync -av --delete "$HOME/.config/picom/" .config/picom/
+rsync -av --delete "$HOME/.config/bspwm/" .config/bspwm/
+rsync -av --delete "$HOME/.config/polybar/" .config/polybar/
+rsync -av --delete "$HOME/.config/rofi/" .config/rofi/
+rsync -av --delete "$HOME/.config/sxhkd/" .config/sxhkd/
+rsync -av "$HOME/.xinitrc" .
