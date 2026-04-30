@@ -6,6 +6,10 @@
 super + Return
 	   kitty
 
+# Open editor
+super + c
+    cblt
+
 # rofi
 super + grave
     	rofi -show drun \

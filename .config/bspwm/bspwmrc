@@ -28,4 +28,4 @@ $HOME/.config/polybar/launch.sh &
 
 # Background
 picom &
-feh --bg-scale ~/Desktop/GpapPeaky/DA/ASSETS/BG/ASCII3.png
+feh --bg-scale ~/Desktop/GpapPeaky/da/ASSETS/BG/ASCII3.png
