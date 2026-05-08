@@ -8,3 +8,6 @@
   -sxhkd
   -picom
   -kitty
+  -xclip
+  -maim
+  -slop

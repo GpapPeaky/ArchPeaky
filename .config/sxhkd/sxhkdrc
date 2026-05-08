@@ -41,8 +41,13 @@ super + Escape
 super + q
     bspc node -c
 
-# super + Print
-#	~/.config/bspwm/      
+# Open firefox
+super + f
+    firefox
+
+# Screenshot selection -> save + clipboard
+Print
+    FILE=~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png; maim -s "$FILE" && xclip -selection clipboard -t image/png -i "$FILE"
 
 #
 # move/resize
@@ -62,3 +67,17 @@ super + alt + shift + {Left,Down,Up,Right}
 # focus the node in the given direction (arrow keys)
 super + {Left,Down,Up,Right}
 	bspc node -f {west,south,north,east}
+
+# Audio
+
+# mute
+XF86AudioMute
+    wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+
+# volume down
+XF86AudioLowerVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+
+# volume up
+XF86AudioRaiseVolume
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
