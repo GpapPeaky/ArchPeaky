@@ -12,7 +12,7 @@ super + c
 
 # Open process viewer
 super + p
-    kitty htop
+    kitty btop
 
 # rofi
 super + grave
