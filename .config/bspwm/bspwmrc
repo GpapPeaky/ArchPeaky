@@ -23,6 +23,7 @@ bspc config active_border_color "#ffffff"
 # File explorer 
 bspc rule -a File-roller state=floating
 
+
 # Polybar init
 $HOME/.config/polybar/launch.sh &
 
