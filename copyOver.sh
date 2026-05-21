@@ -7,4 +7,6 @@ rsync -av --delete "$HOME/.config/rofi/" .config/rofi/
 rsync -av --delete "$HOME/.config/sxhkd/" .config/sxhkd/
 rsync -av --delete "$HOME/.config/kitty/" .config/kitty/
 rsync -av "$HOME/.xinitrc" .
+rsync -av "$HOME/.bash_profile" .
+rsync -av "$HOME/.bashrc" .
 rsync -av "$HOME/Scripts/" .Scripts/
