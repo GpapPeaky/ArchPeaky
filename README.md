@@ -6,6 +6,7 @@
   rofi
   polybar
   bspwm
+  feh
   sxhkd
   picom
   kitty
@@ -18,4 +19,3 @@
   ```
     Terminus TTF
   ```
-
