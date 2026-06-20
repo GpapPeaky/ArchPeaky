@@ -27,6 +27,6 @@ bspc rule -a File-roller state=floating
 # Polybar init
 $HOME/.config/polybar/launch.sh &
 
-# Background and compositor
+# Animated background
 picom &
 feh --bg-scale ~/Desktop/GpapPeaky/da/ASSETS/BG/ASCII3.png
