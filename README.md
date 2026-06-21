@@ -18,4 +18,5 @@
 #### fonts:
   ```
     Terminus TTF
+    DG_One   TTF
   ```
