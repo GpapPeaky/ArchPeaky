@@ -20,3 +20,12 @@
     Terminus TTF
     DG_One   TTF
   ```
+
+#### notes:
+
+  ```sh
+    # Use this when no system syncs can occur due to no available free space.
+    # Not sure why it does that
+  
+    sudo mount -o remount,rw /boot
+  ```
