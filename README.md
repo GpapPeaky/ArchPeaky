@@ -1,7 +1,7 @@
 # ArchPeaky
 ### Personal Arch Linux setup
 
-#### packages:
+#### packages with scirpts:
   ```
   rofi
   polybar
@@ -13,6 +13,11 @@
   xclip
   maim
   slop
+  ```
+
+#### packages
+  ```
+    spicetify-cli AUR
   ```
 
 #### fonts:
