@@ -29,4 +29,4 @@ $HOME/.config/polybar/launch.sh &
 
 # Animated background
 picom &
-feh --bg-scale ~/Desktop/GpapPeaky/da/ASSETS/BG/ASCII3.png
+feh --bg-scale ~/Desktop/GpapPeaky/da/ASSETS/BG/bg0.png
